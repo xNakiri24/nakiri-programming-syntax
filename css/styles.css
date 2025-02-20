@@ -1,0 +1,106 @@
+:root {
+  background-color: #F8F3D9;
+  color: #112A46;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header span {
+  margin: 12px;
+  font-family: "Russo One";
+  font-size: 42px;
+}
+header img {
+  height: 75px;
+  border-radius: 50px;
+  border: 1px solid #112A46;
+}
+header a {
+  position: absolute;
+  right: 40px;
+}
+
+hr {
+  height: 4px;
+  background-color: #112A46;
+}
+
+main {
+  margin-top: 16px;
+}
+main .index-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .index-form .input-style {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+}
+main .index-form .input-style input {
+  height: 30px;
+  width: 250px;
+  border-radius: 12px;
+  border: 1px solid grey;
+  padding: 4px;
+}
+main .index-form .select-style {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+main .index-form .select-style select {
+  height: 30px;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 12px;
+  border: 1px solid grey;
+  padding: 4px;
+}
+main .auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .auth-form input {
+  height: 30px;
+  width: 250px;
+  background-color: #F8F3D9;
+  margin: 8px;
+  padding-left: 4px;
+  border: 0;
+  border-bottom: 1px solid #112A46;
+}
+main .auth-form input:hover {
+  background-color: #EBE5C2;
+}
+main .auth-form button {
+  height: 30px;
+  width: 60px;
+  background-color: #F8F3D9;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 4px;
+}
+main .auth-form button:hover {
+  background-color: #EBE5C2;
+}
+main .list-container {
+  border: 1px solid black;
+  list-style: none;
+  padding-left: 8px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+footer p {
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=styles.css.map */

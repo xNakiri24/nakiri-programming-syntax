@@ -1,0 +1,145 @@
+:root{
+    background-color: #F8F3D9;
+    color: #112A46;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span{
+        margin: 12px;
+
+        font-family: 'Russo One';
+        font-size: 42px;
+        
+    }
+
+    img{
+        height: 75px;
+        border-radius: 50px;
+        border: 1px solid #112A46;
+    }
+
+    a{
+        position: absolute;
+        right: 40px;
+    }
+}
+
+hr{
+    height: 4px;
+    background-color: #112A46;
+}
+
+main{
+    margin-top: 16px;
+
+    .index-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .input-style{
+            display: flex;
+            flex-direction: column;
+
+            margin-right: 8px;
+
+            input{
+                height: 30px;
+                width: 250px;
+
+                border-radius: 12px;
+                border: 1px solid grey;
+
+                padding: 4px;
+            }
+        }
+
+        .select-style{
+            display: flex;
+            flex-direction: column;
+
+            margin-left: 8px;
+
+            select{
+                height: 30px;
+                width: max-content;
+
+                border-radius: 12px;
+                border: 1px solid grey;
+                // border: 0;
+
+                padding: 4px;
+            }
+        }
+    }
+
+    .auth-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+        input{
+            height: 30px;
+            width: 250px;
+
+            background-color: #F8F3D9;
+
+            margin: 8px;
+            padding-left: 4px;
+            
+            border: 0;
+            border-bottom: 1px solid #112A46;
+
+            &:hover{
+                background-color: #EBE5C2;
+            }
+        }
+
+        button{
+            height: 30px;
+            width: 60px;
+
+            background-color: #F8F3D9;
+
+            margin-top: 8px;
+            
+            border: 0;
+            border-radius: 4px;
+
+            &:hover{
+                background-color: #EBE5C2;
+                
+            }
+            
+        }
+    }
+
+    .list-container{
+        border: 1px solid black;
+        list-style: none;
+        padding-left: 8px;
+
+        .list-word{
+            
+        }
+    }
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    p{
+        padding: 0;
+        margin: 0;
+    }
+}
