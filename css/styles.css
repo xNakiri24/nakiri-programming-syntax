@@ -61,12 +61,16 @@ main .index-form .select-style select {
   border: 1px solid grey;
   padding: 4px;
 }
-main .auth-form {
+main .auth-container {
+  display: flex;
+  justify-content: center;
+}
+main .auth-container .register-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .auth-form input {
+main .auth-container .register-form input {
   height: 30px;
   width: 250px;
   background-color: #F8F3D9;
@@ -75,10 +79,10 @@ main .auth-form input {
   border: 0;
   border-bottom: 1px solid #112A46;
 }
-main .auth-form input:hover {
+main .auth-container .register-form input:hover {
   background-color: #EBE5C2;
 }
-main .auth-form button {
+main .auth-container .register-form button {
   height: 30px;
   width: 60px;
   background-color: #F8F3D9;
@@ -86,8 +90,59 @@ main .auth-form button {
   border: 0;
   border-radius: 4px;
 }
-main .auth-form button:hover {
+main .auth-container .register-form button:hover {
   background-color: #EBE5C2;
+}
+main .auth-container .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .auth-container .login-form input {
+  height: 30px;
+  width: 250px;
+  background-color: #F8F3D9;
+  margin: 8px;
+  padding-left: 4px;
+  border: 0;
+  border-bottom: 1px solid #112A46;
+}
+main .auth-container .login-form input:hover {
+  background-color: #EBE5C2;
+}
+main .auth-container .login-form button {
+  height: 30px;
+  width: 60px;
+  background-color: #F8F3D9;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 4px;
+}
+main .auth-container .login-form button:hover {
+  background-color: #EBE5C2;
+}
+main .input-container form {
+  display: flex;
+  flex-direction: column;
+}
+main .input-container form input, main .input-container form textarea, main .input-container form button {
+  padding-left: 8px;
+  margin: 8px auto;
+  border: 0;
+  border-bottom: 1px solid grey;
+  border-radius: 8px;
+}
+main .input-container form input {
+  height: 45px;
+  width: 60%;
+}
+main .input-container form textarea {
+  height: 250px;
+  width: 60%;
+  resize: none;
+}
+main .input-container form button {
+  width: 30%;
 }
 main .list-container {
   border: 1px solid black;
