@@ -13,19 +13,22 @@ document.getElementById('syntaxDetails').addEventListener('submit', function(eve
 
     console.log(data)
 
-    // fetch('../php/register.php', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify(data)
-    // })
-    // .then(response => response.json())
-    // .then(result => {
-    //     console.log('Success:', result);
-    //     alert('Registration successful!'); // Optional: Notify the user
-    // })
-    // .catch(error => {
-    //     console.error('Error:', error);
-    // });
+    fetch('../php/input.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(result => {
+        console.log('Success:', result);
+        alert('Data successful!'); // Optional: Notify the user
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 })
+
+
+
